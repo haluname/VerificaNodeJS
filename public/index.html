@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricetta</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        Il tuo ricettario digitale
+    </header>
+    <main>
+        <section id="secListRicette">
+            <header>
+                <input type="search" placeholder="Cerca una ricetta [INVIO]">
+            </header>
+            <main>
+
+            </main>
+            <button id="btnCreaNuovaRicetta">Crea Nuova Ricetta</button>
+        </section>
+        <section id="secRicetta">
+            <section id="datiRicetta">
+                <h1>torta di pere e cioccolato</h1>
+                <h3>dolce</h3>
+            </section>
+            <section id="ingredienti">
+                <header>
+                    INGREDIENTI
+                </header>
+                <main>
+                </main>
+            </section>
+            <section id="preparazione">
+                <header>
+                    PREPARAZIONE
+                </header>
+                <main>
+                </main>
+            </section>
+            <button id="btnSalva">SALVA</button>
+        </section>
+        <section id="secRicetta" style="display:none;">
+            <div id="datiRicetta">
+                <h1>Nome ricetta</h1>
+                <h3>Categoria</h3>
+            </div>
+            <section id="ingredienti">
+                <h2>Ingredienti</h2>
+                <main></main>
+                <button onclick="addIngrediente()">+ Aggiungi ingrediente</button>
+            </section>
+            <section id="preparazione">
+                <h2>Preparazione</h2>
+                <main></main>
+                <button onclick="addPreparazione()">+ Aggiungi passaggio</button>
+            </section>
+            <button id="btnSalva" style="display:none;">Salva ricetta</button>
+        </section>
+        
+    </main>
+    <footer>
+        Creato da Begovic Emanulah
+    </footer>
+</body>
+</html>
